@@ -8,10 +8,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>THREOLABS test change </title>
+    <title>THREOLABS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/counter.css">
+
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -23,6 +30,9 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 
+     <!-- CSS for hover-overs -->
+    <link href="css/hover.css" rel="stylesheet">
+
   </head>
 
   <body id="page-top">
@@ -30,7 +40,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">THREOLABS</a>
+        <a class="navbar-brand js-scroll-trigger hvr-bounce-in" href="#page-top">THREOLABS</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -38,19 +48,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger hvr-float-shadow" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+              <a class="nav-link js-scroll-trigger hvr-float-shadow" href="#portfolio">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger hvr-float-shadow" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav-link js-scroll-trigger hvr-float-shadow" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger hvr-float-shadow" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -118,14 +128,46 @@
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio" style=" height:900px; background-image: url(img/home.jpg);background-size: cover;background-attachment: fixed; opacity: 0.8;">
+    <section class="bg-light" id="portfolio" style=" height:600px; background-image: url(img/home.jpg);background-size: cover;background-attachment: fixed; opacity: 0.8;">
+     
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Projects</h2>
-            <h3 class="section-subheading text-muted">Our recent projects will be added soon.Stay tuned.</h3>
-          </div>
-        </div>
+        <h1 style="text-align:center;color:rgb(255, 208, 0)">OUR PROJECTS</h1><br>
+          
+          <div class="row text-center">
+            <div class="col-md-3">
+            <div id="counter">
+        <i class="fa fa-code fa-2x"></i>
+        <h1><div class="counter-value" data-count="300">0</div></h1>
+         <p class="count-text ">Our Customers</p>
+      </div>
+            </div>
+            <div class="col-md-3">
+                 <div id="counter">
+        <i class="fa fa-coffee fa-2x"></i>
+        <h1><div class="counter-value" data-count="50">0</div></h1>
+        <p class="count-text ">Happy Clients</p>
+      </div>
+                </div>
+                <div class="col-md-3">
+                  <div id="counter">
+        <i class="fa fa-lightbulb fa-2x"></i>
+        <h1><div class="counter-value" data-count="20">0</div></h1>
+        <p class="count-text ">Projects Complete</p>
+      </div></div>
+      <div class="col-md-3">
+                <div id="counter">
+        <i class="fa fa-bug fa-2x"></i>
+        <h1><div class="counter-value" data-count="150">0</div></h1>
+        <p class="count-text ">Feedback</p>
+      </div>
+                </div>
+           </div>
+
+
+
+
+
+       
         <!--<div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
@@ -213,16 +255,16 @@
           </div>
         </div>
       </div>-->
-      <h1 style="text-align:center;color:rgb(255, 208, 0)">COMING SOON :)</h1>
+      <!-- <h1 style="text-align:center;color:rgb(255, 208, 0)">COMING SOON :)</h1> -->
     </section>
 
     <!-- About -->
     <section id="about" style="background-image: url(img/about.jpg);background-size: cover;background-attachment: fixed; opacity: 0.9; height: 700px;" >
-      <div class="container" >
+      <div class="container" style="width:40%;float:right;">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase" style="color:white;text-align:right;">About</h2>
-            <h3 class="section-subheading text-uppercase"  style="color:white;text-align:right;">Content Should Be Added.</h3>
+            <h1 class="section-subheading"  style="color:white;text-align:justify;font-size: 2vw;">We are a startup company which will provide a quality service by helping your company with a new website/web application or by automating your company processes by a new software/mobile app.</h3>
           </div>
         </div>
         <!--<div class="row">
@@ -309,7 +351,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/dureksha.jpg" alt="">
+              <img class="mx-auto rounded-circle  hvr-grow-rotate" src="img/team/dureksha.jpg" alt="">
               <h4>Dureksha Wasala</h4>
               <p class="text-muted">Web Developer</p>
               <ul class="list-inline social-buttons">
@@ -333,7 +375,7 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/navindu.JPG" alt="">
+              <img class="mx-auto rounded-circle hvr-grow-rotate" src="img/team/navindu.JPG" alt="">
               <h4>Navindu Jayatilake</h4>
               <p class="text-muted">Developer</p>
               <ul class="list-inline social-buttons">
@@ -357,7 +399,7 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/pamuditha.jpg" alt="">
+              <img class="mx-auto rounded-circle hvr-grow-rotate" src="img/team/pamuditha.jpg" alt="">
               <h4>Pamuditha Maduranga</h4>
               <p class="text-muted">Developer</p>
               <ul class="list-inline social-buttons">
@@ -653,6 +695,7 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
+    <script src="js/counter.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
